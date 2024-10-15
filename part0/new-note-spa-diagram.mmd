@@ -2,8 +2,8 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: Create a new note from the event value and add it to the notes array.
-    Note right of browser: Call `redrawNotes` to render the new note.
+    Note right of browser: The browser creates a new note from the event value and add it to the notes array
+    Note right of browser: The browser executes the callback function that renders the notes
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
